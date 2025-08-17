@@ -1,1 +1,1 @@
-# Linguagem de Progrmação
+# Linguagem de Programação
