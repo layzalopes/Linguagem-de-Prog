@@ -1,0 +1,99 @@
+package utilidades;
+
+public class ExemplosWrapper {
+    
+    public static void main(String[] args) {
+        
+        testarWrapperInteger();
+        testarWrapperFloat();
+        testarWrapperDouble();
+        testarWrapperCharacter();
+        
+        
+    }
+    
+    public static void testarWrapperInteger(){
+        System.out.println("---------");
+        System.out.println("Teste do Wrapper Integer");
+        
+        Integer objInteger = 100; 
+        String objIntegerConvertido = objInteger.toString();
+        
+        System.out.println("Imprimindo o valor int como String" + objInteger.toString());
+        
+        
+        
+    }
+    
+    public static void testarWrapperFloat(){
+        
+        System.out.println("---------");
+        System.out.println("Teste do Wrapper Float");
+        
+        Float objFloat1 = 10f;
+        Float objFloat2 = 20f;
+        
+        if (objFloat1.compareTo(objFloat2) == 1){
+            System.out.println("Os 2 valores sao iguais");
+        } else {
+            System.out.println("Os 2 valores sao diferentes");
+        }
+        
+        if (objFloat1.floatValue() == objFloat2.floatValue()) {
+            System.out.println("Os 2 valores sao iguais");
+        } else {
+            System.out.println("Os 2 valores sao diferentes");
+        }
+      
+        
+    }
+    
+    public static void testarWrapperDouble(){
+        
+        System.out.println("---------");
+        System.out.println("Teste do Wrapper Double");
+        
+        Double objDouble1 = 10d;
+        Double objDouble2 = 20d;
+        
+        if (objDouble1.compareTo(objDouble2) == 0){
+            System.out.println("Os 2 valores sao iguais");
+        } else {
+            System.out.println("Os 2 valores sao diferentes");
+        }
+        
+        if (objDouble1.floatValue() == objDouble2.floatValue()) {
+            System.out.println("Os 2 valores sao iguais");
+        } else {
+            System.out.println("Os 2 valores sao diferentes");
+        }
+      
+        
+    }
+    
+    public static void testarWrapperCharacter(){
+        
+        Character objCharacter1 = new Character('A');
+        Character objCharacter2 = new Character('B');
+        
+            if (objCharacter1.charValue() == objCharacter2.charValue()) {
+                System.out.println("Os 2 valores dos objetos sao iguais");
+                } else {
+            System.out.println("Os 2 valores sao diferentes");
+            
+            }
+            
+               if (objCharacter1.equals(objCharacterer2)) {
+                System.out.println("Os 2 valores dos objetos sao iguais");
+                } else {
+            System.out.println("Os 2 valores sao diferentes");
+            
+            }
+               }
+
+        
+      
+        
+    }
+    
+}
