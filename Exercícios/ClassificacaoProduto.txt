@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class ClassificacaoProduto {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Digite o código do produto (1 a 4): ");
+        int codigo = scanner.nextInt();
+
+        switch (codigo) {
+            case 1:
+                System.out.println("Categoria: Eletrônico");
+                break;
+            case 2:
+                System.out.println("Categoria: Vestuário");
+                break;
+            case 3:
+                System.out.println("Categoria: Alimento");
+                break;
+            case 4:
+                System.out.println("Categoria: Livro");
+                break;
+            default:
+                System.out.println("Código inválido");
+        }
+
+        scanner.close();
+    }
+}

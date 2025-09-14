@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class MediaNotas {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        double soma = 0;
+        int quantidade = 0;
+
+        System.out.println("Digite as notas (valor negativo para encerrar):");
+
+        double nota = scanner.nextDouble();
+
+        while (nota >= 0) {
+            soma += nota;
+            quantidade++;
+
+            nota = scanner.nextDouble(); // lê a próxima nota
+        }
+
+        if (quantidade > 0) {
+            double media = soma / quantidade;
+            System.out.println("A média das notas é: " + media);
+        } else {
+            System.out.println("Nenhuma nota válida foi digitada.");
+        }
+
+        scanner.close();
+    }
+}
